@@ -189,6 +189,11 @@ p {
     background-color: dodgerblue;
 } 
 
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
+    min-width: 5rem;
+    min-height: 5rem;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -249,8 +254,8 @@ footer nav a {
         margin: 0 20% 0 20%;
     }
     .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
-        min-width: 10rem;
-        min-height: 10rem;
+        min-width: 15rem;
+        min-height: 15rem;
     }
     
     /*  T R B L */
