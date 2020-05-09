@@ -51,6 +51,7 @@ table {
 body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    display: flex;
 }
 
 html {
@@ -135,6 +136,7 @@ p {
     border-bottom: 1px dashed black;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
 }
 
@@ -213,7 +215,7 @@ footer {
     width: 100%;
     background: black;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 footer nav {
@@ -237,25 +239,40 @@ footer nav a {
         flex-direction: column;
         justify-content: center;
         align-content: center;
+        width: 100%;
     }
     .text-container1 {
-        width: 100%;
+        min-width: 100%;
+    }
+    .text-container1 h2 {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 3rem;
+    }
+    .text-container1 p {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 2rem;
     }
     .middle-content {
         display: flex;
         flex-wrap: wrap;
     }
-    .text-container1 div {
-        width: 100%;
-    }
     .boxes {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 20% 0 20%;
+        justify-content: space-around;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .boxes div {
+        padding-top: 20%;
+        padding-bottom: 20%;
     }
     .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
-        min-width: 15rem;
-        min-height: 15rem;
+        min-width: 23rem;
+        min-height: 23rem;
+        text-align: center;
     }
     
     /*  T R B L */
@@ -269,13 +286,93 @@ footer nav a {
     .text-container2 {
         width: 40%;
     }
+    footer {
+        justify-content: center;
+    }
         
 }
 
 
 @media (max-width: 500px) {
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%
+    }
+    .header-img-logo {
+        margin: 3%;
+        width: 100%;
+        padding: 0% 30% 0 30%;
+    }
+    .header-div {
+        display: flex;
+        margin: 1%;
+        width: 100%;
+        justify-content: center;
+    }
+    .header-nav {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        width: 100%;
+    }
+    .header-nav div {
+        text-align: center;
+        width: 100%;
+        margin: 1%;
+    }
+    .header-nav div a {
+        font-size: 2.5rem;
+        color: black;
+    }
+    .header-img-banner {
+        margin: 1%;
+        width: 100%;
+    }
+    .top-content {
+        width: 100%;
+    }
+    .text-container1 {
+        width: 100%;
+    }
+    .text-container1 h2 {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 3rem;
+    }
+    .text-container1 p {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 2rem;
+    }
+    .middle-content {
+        display: flex;
+        border: none;
+    }
+    .middle-content h2 {
+        text-align: center;
+    }
+    .boxes div {
+        padding-top: 50%;
+        padding-bottom: 40%;
+        margin: 3%;
+    }
+    .bottom-content {
+        width: 100%
+    }
     .text-container2 {
         width: 100%;
+    }
+    .text-container2 h2 {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 3rem;
+    }
+    .text-container2 p {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 2rem;
     }
     .middle-content {
         display: flex;
@@ -284,5 +381,18 @@ footer nav a {
         flex-direction: column;
         justify-content: center;
         align-content: center;
+    }
+    .contact {
+        width: 100%;
+        display: flex;
+    }
+    .bottom-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom-nav div {
+        font-size: 2.5rem;
+        margin: .5%;
     }
 }
